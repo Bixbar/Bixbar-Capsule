@@ -1,56 +1,38 @@
-# ccookncook.bixbar
+# Bixbar-Capsule
 
-## assets
-
-- **images**
-
-## code
-
-- submitSurvey.js
-  - user의 Age, Gender를 받아온다.
-
-- createUser.js
-  - bixbyUser
-
-- findbyBaseSpirit.js  
-  - 칵테일 베이스로 검색
-
-- findbyCocktailName.js
-  - 칵테일 이름으로 검색
-
-- recommandFood.js
-  - 칵테일과 어울리는 음식 검색
-
-## models
-
-- **actions**
-
-  - BaseList.model.bxb
-  - BaseClickRecipe.model.bxb
-  - Recommand.model.bxb
-  - FoodRecommand.model.bxb
-
-- **concepts**
-
-  - **Input**
-  - **OutputInfos**
-  - **ResultStructure**
-
-# resources
-
-- **Base**
-  - **layouts**
-  - **views**
-  - capsule.properties
-  - endpoints.bxb
-
-- **en-US**
-  - training
-  - **vocab**
-  - capsule-info.bxb
-  - hints.bxb
-
-- README.md
-- Senario.md
-- capsule.bxb
-- Training
+## Directory structure
+- 📁 assets
+  - 📁 images
+- 📁 code
+  - findbyCocktailName.js
+  - findbyBaseSpirit.js  
+  - findbyBaseClick.js
+  - recommandFood.js
+  - CreateUser.js
+  - submitSurvey.js
+  - findGender.js
+  - Personalize.js
+  - PersonalClick.js
+- 📁 models
+  - 📁 actions
+  - 📁 concepts
+    - 📁 Input
+    - 📁 OutputInfos
+    - 📁 ResultStructure
+- 📁 resources
+  - 📁 Base
+    - 📁 layouts
+      - CocktailList.layout.bxb
+      - CocktailDetail.layout.bxb
+    - 📁 views
+      - CocktailResult.view.bxb
+      - BaseSpiritResults.view.bxb
+      - BaseClickResult.view.bxb
+      - FoodResults.view.bxb
+      - UserInfo.view.bxb
+      - Age_Input.view.bxb
+      - Geder_Input.view.bxb
+      - Personal.view.bxb
+      - PerClickResult.view.bxb
+    - capsule.properties
+    - endpoints.bxb
