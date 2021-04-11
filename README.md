@@ -36,3 +36,24 @@
       - PerClickResult.view.bxb
     - capsule.properties
     - endpoints.bxb
+
+## Code reivew
+### $vivContext.bixbyUserId
+```javascript
+user = {
+    "gender": "Male",
+    "age": survey.age,
+    "userID" : $vivContext.bixbyUserId,
+    };
+```
+- `$vivContext` : 사용자 컨텍스트를 표시한다.
+  - 이를 통하여 bixbyUserId에 접근한다.
+
+```bixby
+capsule {
+  permissions {
+    bixby-user-id-access
+  }
+}
+```
+- 엑세스하기 위해서는 bixby-user-id-access에 대한 퍼미션을 설정해야 한다.
